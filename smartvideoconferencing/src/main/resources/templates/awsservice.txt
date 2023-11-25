@@ -1,0 +1,41 @@
+[Unit]
+Description=A smart video conferencing Application 
+After=syslog.target
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/project/SVC.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+
+
+/etc/systemd/system
+	svc.service
+
+
+systemctl enable svc
+systemctl start svc
+systemctl stop svc
+systemctl restart svc
+systemctl status svc
+
+systemctl enable nginx
+systemctl start nginx
+systemctl stop nginx
+systemctl restart nginx
+systemctl status nginx
+
+/etc/nginx/conf.d/
+			codewithdurgesh.com.conf
+
+
+server {
+  listen 0.0.0.0:80;
+  root /home/ubuntu/project/examfront; 
+  server_name codewithdurgesh.com;	
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}

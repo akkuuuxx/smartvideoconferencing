@@ -1,0 +1,12 @@
+CREATE TABLE `user` (
+  `USERNAME` varchar(500) NOT NULL,
+  `EMAIL` varchar(500) NOT NULL,
+  `PASSWORD` varchar(500) NOT NULL,
+  `STATUS` varchar(500) NOT NULL,
+  `dateofbirth` date NOT NULL,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`EMAIL`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE DATABASE `smartconference` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;

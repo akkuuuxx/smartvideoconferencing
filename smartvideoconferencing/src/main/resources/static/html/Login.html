@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="../css/Login.css" />
+
+<body>
+  <div class="heading">
+    <nav>
+      <ul class="heading_title">
+        Smart Video Conferencing
+      </ul>
+    </nav>
+  </div>
+
+  <div class="box-container">
+    <div class="formsection">
+
+      <div class="login-form">
+        <div class="title">Welcome,   Login Please !!</div>
+
+        <div id="errorMsg"></div>
+        <form id="loginForm">
+          <div class="login-input">
+            <input type="email" id="email" required placeholder="Enter your email" />
+          </div>
+          <div class="login-input">
+            <input type="password" id="password" required placeholder="Enter your password" />
+          </div>
+            <div class="pass-link">
+             <a href="../html/passwordreset.html">Forgot Password</a>
+            </div>
+        
+
+          <button class="login-button"  >Login</button>
+          <div class="signup-link">
+            <h3>Not a user?</h3>
+            <a href="../html/register.html">Sign up now</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="formimage">
+      <img src="../images/secure_login.svg" />
+    </div>
+  </div>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

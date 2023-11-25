@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <link rel="stylesheet" href="../css/index.css" />
+
+  <body>
+    <div class="heading">
+      <nav>
+        <ul class="heading_title">
+          Smart Video Conferencing
+        </ul>
+      </nav>
+    </div>
+
+    <div class="box-container">
+      <div class="formsection">
+        <div class="meeting-form">
+          <div class="title" id="title"></div>
+
+          <form id="meetingForm">
+            <div class="meeting-button">
+              <button id="newMeetingBtn">Create a new meeting</button>
+            </div>
+
+            <div class="meetingId-input">
+              <input
+                type="text"
+                id="meetingId"
+                required
+                placeholder="Enter a meeting id to join"
+              />
+            </div>
+            <div class="join-button">
+              <button id="joinBtn">Join</button>
+            </div>
+            <div class="logout-button">
+              <button id="logoutBtn" >Logout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="formimage">
+        <div>
+          <h1 for="userList">Connected Users</h1>
+        </div>
+        <div class="container">
+          <table class="user-table">
+            <thead>
+            <tr class="table-heading">
+              <th>User Name</th>
+              <th>Email</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+        
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
